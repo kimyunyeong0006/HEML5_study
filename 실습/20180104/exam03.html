@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style media="screen">
+    div {
+      width: 100px;
+      height: 50px;
+      position: relative;
+
+    }
+
+    #box1 {
+      animation-delay: 3s;
+      background-color: yellow;
+      animation: boxmove 4s linear infinite alternate;
+    }
+    #box2 {
+      animation-delay: 5s;
+      background-color: orange;
+      animation: boxmove 5s linear infinite alternate;
+    }
+
+    @keyframes boxmove {
+      from {
+        left: 0px;
+      }
+      to {
+        left: 300px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="box1">
+    박스1
+  </div>
+  <div id="box2">
+    박스2
+  </div>
+</body>
+
+</html>
