@@ -4,53 +4,65 @@
   <meta charset="utf-8">
   <title></title>
   <style media="screen">
+
+    @keyframes bounce {
+      from, to {
+        bottom: 0px;
+        transition-timing-function: ease-out;
+      }
+      50%{
+        bottom: 200px;
+        transition-timing-function: ease-in;
+      }
+    }
+
+
     div {
-      width: 100px;
-      height: 50px;
-      position: relative;
-
-      animation: boxmove 4s alternate;
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      animation-name: bounce;
+      position: absolute;
+      animation-iteration-count: infinite;
+      animation: boxmove 1s alternate;
     }
 
-    #box1 {
-      animation-delay: 3s;
-      animation-iteration-count: 3;
-      animation-timing-function: ease;
+    #c1 {
+      left: 10px;
+      background: red;
+      animation-duration: 5s;
     }
-    #box2 {
-      animation-delay: 3s;
-      animation-iteration-count: 3;
-      animation-timing-function: ease-out;
+    #c2 {
+      left: 40px;
+      background: pink;
+      animation-duration: 5s;
     }
-    #box3 {
-      animation-delay: 3s;
-      animation-iteration-count: 3;
-      animation-timing-function: ease-in;
+    #c3 {
+      left: 70px;
+      background: yellow;
+      animation-duration: 5s;
+    }
+    #c4 {
+      left: 100px;
+      background: green;
+      animation-duration: 5s;
+    }
+    #c5 {
+      left: 170px;
+      background: purple;
+      animation-duration: 5s;
     }
 
-    @keyframes boxmove {
-      from {
-        left: 0px;
-        background-color: red;
-      }
-      to {
-        left: 300px;
-        background-color: yellow;
-      }
-    }
+
   </style>
 </head>
 
 <body>
-  <div id="box1">
-    박스1 ease
-  </div>
-  <div id="box2">
-    박스2 ease-out
-  </div>
-  <div id="box3">
-    박스3 ease-in
-  </div>
+  <div id="c1"></div>
+  <div id="c2"></div>
+  <div id="c3"></div>
+  <div id="c4"></div>
+  <div id="c5"></div>
 </body>
 
 </html>
