@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CSS Layout | 수정</title>
+  <style media="screen">
+    #jb-container {
+      width: 96%;
+      padding: 2%;
+      border: 1px solid #d5d5d5;
+    }
+
+    #jb-header {
+      width: 100%
+      padding: 3%;
+      margin-bottom: 20px;
+      border: 1px solid #d5d5d5;
+      text-align: center;
+    }
+
+    #jb-content {
+      width: 70%;
+      padding: 3%;
+      margin-bottom: 20px;
+      border: 1px solid #d5d5d5;
+      float: right;
+      text-align: center;
+    }
+
+    #jb-sidebar {
+      width: 15%;
+      padding: 3%;
+      margin-bottom: 20px;
+      float: left;
+      border: 1px solid #d5d5d5;
+    }
+
+    #jb-footer {
+      clear: both;
+      width: 95%;
+
+      padding: 5%;
+      border: 1px solid #d5d5d5;
+      color:#5D5D5D;
+    }
+
+    a{
+      color:#5D5D5D;
+    }
+
+    .movetab{
+      position: absolute;
+      left: 5%;
+      width: 60px;
+      height: 40px;
+      background: #D1B2FF;
+      transition-property: width background;
+      transition-duration: 1s;
+      color: white;
+      text-align:center;
+      vertical-align: middle;
+      font-size: 3px;
+    }
+    .movetab:hover{
+      width: 100px;
+      background: #5F4B8B;
+      font-size: 5px;
+    }
+
+    td {
+      height: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="jb-container" top="900px">
+    <div id="jb-header">
+      <h1><b>HTML5 & CSS3</b></h1>
+      <img src="http://hanwong.github.io/assets/html_css.jpg" alt="" width="100px" align="center">
+    </div>
+    <div id="jb-sidebar">
+      <table>
+        <tr>
+          <td><a href="index.html"><div class="movetab">Main</div></a></td>
+        </tr>
+        <tr>
+          <td><a href="index1.html"><div class="movetab">1</div></a></td>
+        </tr>
+        <tr>
+          <td><a href="index2.html"><div class="movetab">2</div></a></td>
+        </tr>
+        <tr>
+          <td><a href="index3.html"><div class="movetab">3</div></a></td>
+        </tr>
+        <tr>
+          <td><a href="index4.html"><div class="movetab">4</div><</a></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="jb-content">
+      <br> 따란 유경이가 나왔어요 <br>
+      <img src="https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-1/c0.0.955.955/26047305_921895941306532_4124652952961391892_n.jpg?oh=034f7901b5b6aed77f84ed44070c5aaa&oe=5ABB748A" width="200"alt="정유경">
+    </div>
+
+    <div id="jb-footer">
+      이름 : 김윤영 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;
+      학교 : <a href="https://www.e-mirim.hs.kr/renewal/main.jsp">미림여자정보과학고등학교</a><br>
+      전화번호 : 010-2774-7668     &nbsp;&nbsp; |  &nbsp;&nbsp;   주소 : 서울특별시 강북구
+
+    </div>
+  </div>
+</body>
+
+</html>
