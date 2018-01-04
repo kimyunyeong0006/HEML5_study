@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style media="screen">
+    div {
+      width: 100px;
+      height: 50px;
+      position: absolute;
+      animation-timing-function: linear;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
+      animation-play-state: running;
+    }
+
+    #div1 {
+      background-color: blue;
+      animation-direction: reverse;
+      animation-name: L-box
+    }
+    #div2 {
+      background-color: yellow;
+      animation-direction: reverse;
+      animation-name: R-box
+    }
+
+    @keyframes L-box {
+      from {
+        left: 0px;
+        background-color: red;
+      }
+      to {
+        left: 300px;
+        background-color: yellow;
+      }
+    }
+    @keyframes R-box {
+      0% {left: 0px;}
+    }
+  </style>
+</head>
+
+<body>
+  <div id="box1">
+    박스1 ease
+  </div>
+  <div id="box2">
+    박스2 ease-out
+  </div>
+  <div id="box3">
+    박스3 ease-in
+  </div>
+</body>
+
+</html>
