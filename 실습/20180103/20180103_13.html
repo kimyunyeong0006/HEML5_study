@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>그레디언트 백그라운드속성</title>
+    <style media="screen">
+      div {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 10px;
+      }
+      .jbGrad01{
+        background: linear-gradient(to right,#5D4157 , #a8caba, #a8caba, #faaca8 );
+      }
+      .jbGrad02{
+        background: linear-gradient(to left, yellow, red, purple, blue );
+      }
+      .jbGrad03{
+        background: linear-gradient(to right, yellow 50%, red 60%, purple, blue );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="jbGrad01">
+      (to right, yellow, red, purple, blue)
+    </div>
+    <div class="jbGrad02">
+      (to left, yellow, red, purple, blue)
+    </div>
+    <div class="jbGrad03">
+      (to right, yellow 50%, red 60%, purple, blue)
+    </div>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>가시성 속성과 디스플레이 속성 비교하기</title>
+    <style media="screen">
+      .v1 {
+        visibility: hidden;
+        border: 1px dotted red;
+      }
+      .v2 {
+        visibility: visible;
+        border: 1px dotted red;
+      }
+      .v3 {
+        display: none;
+        border: 1px dotted red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="v1" >  <!--공간 있음-->
+      <img src="https://ih0.redbubble.net/image.345577956.0455/flat,800x800,075,f.u2.jpg" width="50px" height="50px">
+    </div>
+    <div class="v2">
+      <img src="https://ih0.redbubble.net/image.345577956.0455/flat,800x800,075,f.u2.jpg" width="50px" height="50px">
+    </div>
+    <div class="v3">  <!--공간 없음-->
+      <img src="https://ih0.redbubble.net/image.345577956.0455/flat,800x800,075,f.u2.jpg" width="50px" height="50px">
+    </div>
+  </body>
+</html>

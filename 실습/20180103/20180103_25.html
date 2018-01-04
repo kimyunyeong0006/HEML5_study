@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>3-coloumn Layout</title>
+  <style type="text/css">
+  body{
+    background: linear-gradient(to bottom , #a8caba, #a8caba, #faaca8 );
+  }
+    #wrapper {
+      width: 90%;
+      margin: 3%;
+      padding: 20px;
+      border: 1px solid #D5d5d5;
+      background-color: white;
+    }
+
+    #header {
+      margin-bottom: 20px;
+      padding: 20px;
+      border: 1px solid #D5d5d5;
+    }
+
+    #aside_left {
+      margin: 0 20px 20px 0;
+      padding: 20px;
+      width: 15%;
+      float: left;
+      border: 1px solid #D5d5d5;
+    }
+
+    #section {
+      margin-bottom: 20px;
+      padding: 20px;
+      width: 53%;
+      float: left;
+      border: 1px solid #D5d5d5;
+    }
+
+    #aside_right {
+      margin-bottom: 20px;
+      padding: 20px;
+      width: 15%;
+      float: right;
+      border: 1px solid #D5d5d5;
+    }
+
+    #footer {
+      clear: both;
+      padding: 20px;
+      border: 1px solid #D5d5d5;
+    }
+    a {
+      color: black;
+    }
+    a:hover{
+      font-style: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <div id="header">
+      <img width="100px" src="https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-9/24296603_2034986643452602_7593454745914551819_n.jpg?oh=e4c5c59c0213521aa4932eeafc3f1764&oe=5ABC77EB" alt="">
+
+    </div>
+
+    <div id="aside_left">
+      <h2>바로가기</h2>
+      <ul>
+        <li><a  href="https://lh3.googleusercontent.com/95I8KiBSB-PG7UvK8nFb-6m3YEb_djrscIuPMGipt-wYFxSXHdjRDvE_sWO0eVrmykaaCdw4_BZnRKP4511XrTFXMeOPKR9n5P5AKMDLAcpku1w1t0WqywRT2yi_PUdL4Kg2NZeHEAUpk-dj5UekY5A-wfrEgnus8aIyOM9r_UrZ4R6mxfJfrZAQdEcTbj4jIEqReF0qGQOIeAzf6mvnKKQ47zXBaKsRoxAZlnXTahvYmigyd1b4s4jU7FQIBE-IJAT33nu3wjyIt4hbc6en6S1SRxjDgQUhdswfsagGgvr6-OOUgzk1saPidM7Rc44Jt_BkcuLqbJKJkwcOIqO8AM1bW9z8s_0MRIXC75TH7jhJtqaCrxogCTRZbEbxzeopLSZJVKCU7rHKY-sLkmrzMdUbZe3eiGNGi4513UmoocAdRHVT9TmTPA-pE2JSVa5Ky417WFB9fobLqLGnXpODSNFQqi3U0ICX_8AEo034wusZjDn2vI61CSIT51LWGL777FugsAqSqezMlZ8TBn4JUkMyE2EC_BVQOJQWuqSmBHf_1ntRAWBlF_alTyuoTcE0YLO0HboUW2olD3rmPjlnRFAIV8U931O4lN7MN1tC=s624-no">볼터치냥.jpg</a></li>
+        <li><a href="blob:https://www.youtube.com/9c8f6e5a-abeb-4262-be43-8096eaea655a">점프.avi</a></li>
+        <li><a href="https://lh3.googleusercontent.com/EonjRLbpPUYeAJDOzM22e8ORwWk8kRQoSLtuvBFROwkO2OKVO-Ru9fdJMJqRewvVhbdCnDwMFtsUWsD_gbgqs5J3MkQsLXPlwxzoKRB_fGiuwPgaq4rN7hOhpLaA5D25Y51k25aIu7XdQaLGveQksp0O_YK4E1qXrZPNrFYJ5fSYj6aa1AAmOaHLDzjG7lfQdPXDj2_it0c5sKr3sl6MI7w0vzEQqGLzVHubvNKZkRFel0KYG8lVfuVbiCG4tpuWOKN0SZbLU3sScwZXuV7xYldELP9xroKNV2cWJfKNak1OakIw6Gj00XLUYAwGkU8GXx6-KOsWWJyEJS649El9Ldkhgbf6AdGLR32_ikLMmpQEvjWBGc5jh21udVbHFHrQYY35ergE90szmz5OXeD663I5jT04ypM0kij489ir6W-KxTGdDB_PDC61NxVPSOVEn6Q98u5F376ECZ5jxJ7VYP2iG7fic5t0FMb-FBht0n5HXr4VRApfr0um4hVQZsDOqtXNrFbcd6ErO5jJ6P-LOiYv7nBdVw8q7V98gdcQfBEkTMU3QAG9dV_uhgPyUnHC8ugYQwgrMyFcGFfoiSEguCIfCI6wsy9IVqGGbWvC=s624-no">모해.jpg</a></li>
+        <li><a href="https://lh3.googleusercontent.com/BIuEkmSTwzRiWNFbW0FxdUr97bSeMda4CZ1F2g5IXmCOvFm4vwPeGdsfK2Hnh7arMCVwT_kw1v2kRcQqX5Zz80BCE2ucfA-cbWFKomtd0pCi-jHf5KwzrvO6J2eLolpLIxfJg2m1g7bnxg_pdqNDcPPe1QdWHwQIm2JF6kwByNWTQ-XxKtL_PYA4ROvzzG0pvCcdjnSxX4PdRa9dOsER-98S-p52xtryCASwXY6D8jRF78y-O2goY-ny9Gy390hojPuBg-Ye05bn7AZFdQiaNsb8mSinKHegoo3tLmpwWVxqn7ymN4lkFEw5aLtPHimvhbU7oysuyHKHZdAYmr_ZhIRtMCH8FBirYZ2flPbEUL8uWnoJ_X7DqcpbitsuENxj6EZ-E04io62X6QYB67HvoXXxN186NbujNXCOYTVoXueVnsgPHlWFO0lR2NX2b7xtfhOBljZ0OeAbZ6Pkwzz97gKzrI3cPY2wk95YHLRt1BjjDso-qn_vQAZ6ekWr-bkkMHj5M9izniOk9e3gzn7DGApDHI2BcopUgw_wBK2fANaKNGrNNqGs_n1Ck_R72YI2MSV0l8PWT4yVteNDMP7V5mtohDI0McZuftwM6Prv=s624-no">하품.jpg</a></li>
+      </ul>
+    </div>
+
+    <div id="section">
+      <h2>꾹꾸꾸굮ㄱ굮굮꾸꾹꾸꾸국</h2>
+      <h3>꾸냥이 성이 '이씨'가 된 이유</h3>
+      <p>김윤영 김윤정 김인천<br>
+      집에 김씨만 3명있다고<br>
+      엄마가 우겨서 이꾸냥이 되어따 </p>
+    </div>
+
+    <div id="aside_right">
+      <h2>꾸냥이 귀요오</h2>
+      <ul>
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <li>menu14</li>
+      </ul>
+    </div>
+
+    <div id="footer">
+      <b>footer</b>
+      <p>copyRight</p>
+    </div>
+
+  </div>
+</body>
+
+</html>
